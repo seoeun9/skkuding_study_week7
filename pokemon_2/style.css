@@ -1,0 +1,88 @@
+body{
+    background-color: #1e1e1e;
+}
+
+h1{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgb(247, 196, 55)
+}
+
+a{
+    text-decoration : none;
+    color : rgb(247, 196, 55);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 한 줄에 5개씩 */
+    gap: 35px;
+    justify-content: center; 
+    padding: 40px;
+  }
+
+.item{
+    background-color: #1e1e1e;
+    border: 0.5px solid rgb(247, 196, 55);
+    gap: 20px;
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 600px;
+    padding: 10px;
+    display: flex;             /* 아이템 안에 있는 요소들을 가로로 정렬 */
+    align-items: center;
+    gap: 60px;                 /* 이미지와 텍스트 사이 간격 */
+    padding: 10px;
+}
+
+.item img{
+    margin-left: 30px;
+    width: 100px;
+    height: auto;
+    object-fit: contain;  /* 이미지가 잘리지 않게 */
+}
+
+.item:hover {
+    background-color: #2e2e2e;
+    transition: all 0.2s ease-in-out; /* 부드러운 애니메이션 */
+    cursor: pointer;
+    border-color:rgb(233, 171, 0);
+  }
+
+.img-wrapper{
+    display: flex; 
+    justify-content: center;  /* 수평 정렬 */
+    align-items: center;
+  }
+
+.img-wrapper img{
+    object-fit: contain;
+    width: 300px;
+    height: auto;   
+    border-radius: 100%;
+    border: 1px solid rgb(233, 171, 0);
+}
+
+.infoTable {
+    background-color: #1e1e1e;
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 14px;
+    border-collapse: collapse;
+    color: white;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+td{
+    padding: 20px;
+}
+
+tr{
+    border-bottom: 0.25px solid rgb(233, 171, 0);
+}
