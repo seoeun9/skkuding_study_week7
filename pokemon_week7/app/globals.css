@@ -1,0 +1,99 @@
+.body{
+  background-color: #141414;
+}
+
+.title{
+  padding: 15px 200px 15px;
+  border-bottom: 1px solid rgb(247, 196, 55);
+  font-size: 23px;
+  color : rgb(247, 196, 55);
+}
+
+.h1:hover {
+  color: rgba(247, 196, 55, 0.808);
+}
+
+.h2{
+  font-size: 20px;
+}
+
+.Link{
+  text-decoration : none;
+  color : rgb(247, 196, 55);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 한 줄에 5개씩 */
+  gap: 35px;
+  justify-content: center; 
+  padding: 35px;
+}
+
+.item{
+  display: flex;                  /* 아이템 안에 있는 요소들을 가로로 정렬 */  
+  align-items: center;
+  justify-items: left; 
+  background-color: #141414;
+  border: 1px solid rgb(87, 69, 19);
+  font-size: 15px;  
+  color: rgb(205, 205, 205);
+  border-radius: 10px;
+  padding: 15px 250px 15px 15px;             /*내부 아이템(이미지, 텍스트)까지의 공백*/
+  gap: 20px;                      /* 이미지와 텍스트 사이 간격 */
+}
+
+.item img{
+  /*width: 80px;
+  height: auto; */
+  object-fit: contain;  /* 이미지가 잘리지 않게 */
+}
+
+.item:hover {
+  background-color: #141414;
+  transition: all 0.2s ease-in-out; /* 부드러운 애니메이션 */
+  cursor: pointer;
+  border: 1px solid rgb(238, 181, 24);
+}
+
+.img-wrapper{
+  display: flex; 
+  justify-content: center;  /* 수평 정렬 */
+  align-items: center;
+}
+
+.img-wrapper img{
+  object-fit: contain;
+  /*width: 300px;
+  height: auto;*/   
+  border-radius: 100%;
+  border: 1px solid rgb(233, 171, 0);
+  margin : 20px 20px;
+}
+
+.infoTable {
+  background-color: #141414;
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 15px;
+  border-collapse: collapse;
+  border: 0.5px solid rgba(233, 171, 0, 0.438);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+  display: block;
+  justify-items: center;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+td{
+  padding: 10px;
+}
+
+tr{
+  border-bottom: 0.25px solid rgba(233, 171, 0, 0.438);
+}
+
